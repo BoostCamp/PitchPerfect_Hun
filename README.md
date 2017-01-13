@@ -16,14 +16,16 @@
 - Sharing record sound
 
 ## Video
-[![PitchPerfect_Hun]()]()
+[![PitchPerfect_Hun]()](https://github.com/BoostCamp/PitchPerfect_Hun/blob/master/introducing.mp4?raw=true)
 
 ## Screenshots
 - Portrait Screen
-![Portrait]()
+![Portrait_record](https://github.com/BoostCamp/PitchPerfect_Hun/blob/master/Screenshots/Record_vertical.png?raw=true)
+![Portrait_play](https://github.com/BoostCamp/PitchPerfect_Hun/blob/master/Screenshots/Play_vertical.png?raw=true)
 
 - Landscape Screen
-![LandScape](https://github.com/BoostCamp/PitchPerfect_hun)
+![LandScape_record](https://github.com/BoostCamp/PitchPerfect_Hun/blob/master/Screenshots/Record_horizontal.png?raw=true)
+![LandScape_play](https://github.com/BoostCamp/PitchPerfect_Hun/blob/master/Screenshots/Play_horizontal.png?raw=true)
 
 ## Info
 - Author : Hun Park
