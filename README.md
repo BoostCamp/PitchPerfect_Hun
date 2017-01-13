@@ -17,7 +17,7 @@
 
 ## Video
 [![PitchPerfect_Hun](https://github.com/BoostCamp/PitchPerfect_Hun/blob/master/Screenshots/introducing.png?raw=true)](https://youtu.be/Gn3mJqArUiM)
-![Download Video](https://github.com/BoostCamp/PitchPerfect_Hun/blob/master/introducing.mp4?raw=true)
+[Download Video](https://github.com/BoostCamp/PitchPerfect_Hun/blob/master/introducing.mp4?raw=true)
 
 ## Screenshots
 - Portrait Screen <br/>
