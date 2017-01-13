@@ -12,6 +12,11 @@ import AVFoundation
 class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var mainStack: UIStackView!
     @IBOutlet weak var controllStack: UIStackView!
+    @IBOutlet weak var tuningStack: UIStackView!
+    @IBOutlet weak var stackRow1: UIStackView!
+    @IBOutlet weak var stackRow2: UIStackView!
+    @IBOutlet weak var stackRow3: UIStackView!
+
     
     @IBOutlet weak var slowButton: UIButton!
     @IBOutlet weak var fastButton: UIButton!
@@ -167,9 +172,19 @@ class PlaySoundsViewController: UIViewController {
             controllStack.spacing = 2.0
             startButton.heightAnchor.constraint(lessThanOrEqualToConstant: 70)
             
+            tuningStack.axis = .horizontal
+            stackRow1.axis = .vertical
+            stackRow2.axis = .vertical
+            stackRow3.axis = .vertical
+            
         } else {
             mainStack.axis = .vertical
             controllStack.axis = .horizontal
+            controllStack.spacing = 20
+            tuningStack.axis = .vertical
+            stackRow1.axis = .horizontal
+            stackRow2.axis = .horizontal
+            stackRow3.axis = .horizontal
         }
     }
 }

@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 
 class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
+    @IBOutlet weak var mainStack: UIStackView!
     
     var audioRecorder: AVAudioRecorder!
     
@@ -25,6 +26,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     override func viewWillAppear(_ animated: Bool) {
         stopButton.isEnabled = false
         pauseButton.isEnabled = false
+        checkViewOrientation()
     }
     
     @IBAction func recordButtonClicked(_ sender: Any) {
@@ -84,6 +86,19 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
             let playSoundsVC = segue.destination as! PlaySoundsViewController
             let recordedAudioURL = sender as! URL
             playSoundsVC.recordedAudioURL = recordedAudioURL
+        }
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        checkViewOrientation()
+    }
+    
+    func checkViewOrientation() {
+        if UIDevice.current.orientation.isLandscape {
+            mainStack.spacing = 5
+        } else {
+            mainStack.spacing = 15
+
         }
     }
 }

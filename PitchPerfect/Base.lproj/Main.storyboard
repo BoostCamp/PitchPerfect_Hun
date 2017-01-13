@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="iL0-qh-5yg">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="iL0-qh-5yg">
                                 <rect key="frame" x="97" y="184" width="180" height="333"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lr-p2-Jw4">
@@ -88,6 +88,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Record" id="BwX-BF-CHp"/>
                     <connections>
+                        <outlet property="mainStack" destination="iL0-qh-5yg" id="ref-3w-oru"/>
                         <outlet property="pauseButton" destination="cR8-bW-R3y" id="R4d-az-rEV"/>
                         <outlet property="recordButton" destination="1Lr-p2-Jw4" id="eak-0g-czh"/>
                         <outlet property="recordingLabel" destination="RJ0-Iy-tqz" id="18J-mS-QSU"/>
@@ -121,7 +122,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="336" height="167.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiP-HZ-dF3" userLabel="Slow Button">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168" height="167.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="167.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="TiP-HZ-dF3" secondAttribute="height" id="mEm-Hv-RjJ"/>
                                                         </constraints>
@@ -159,7 +160,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkF-Zg-hB9" userLabel="Low Pitch Button">
-                                                        <rect key="frame" x="168.5" y="0.0" width="167.5" height="168"/>
+                                                        <rect key="frame" x="169" y="0.0" width="167" height="168"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="vkF-Zg-hB9" secondAttribute="height" multiplier="1:1" id="tdG-Dr-vK3"/>
                                                         </constraints>
@@ -175,7 +176,7 @@
                                                 <rect key="frame" x="0.0" y="335.5" width="336" height="167.5"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPr-PK-eWx" userLabel="Echo Button">
-                                                        <rect key="frame" x="0.0" y="0.0" width="168.5" height="167.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="168" height="167.5"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="hPr-PK-eWx" secondAttribute="height" id="wZg-iE-WlR"/>
                                                         </constraints>
@@ -265,8 +266,12 @@
                         <outlet property="reverbButton" destination="pdk-ue-cBd" id="suw-34-jq2"/>
                         <outlet property="shareButton" destination="Jza-Ee-GaX" id="qH9-Ab-MhI"/>
                         <outlet property="slowButton" destination="TiP-HZ-dF3" id="rnK-et-Bnw"/>
+                        <outlet property="stackRow1" destination="Bdz-kn-upN" id="PwA-Bb-rBn"/>
+                        <outlet property="stackRow2" destination="Wwg-Jf-emT" id="Ngg-je-i56"/>
+                        <outlet property="stackRow3" destination="2wK-N9-OFy" id="IqM-Fw-eNW"/>
                         <outlet property="startButton" destination="2ku-OM-cap" id="lot-aB-iPB"/>
                         <outlet property="stopButton" destination="sAt-wj-ylM" id="bQc-ZY-foQ"/>
+                        <outlet property="tuningStack" destination="WZa-pW-Mgf" id="D2a-d4-0VA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3br-TQ-VlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
